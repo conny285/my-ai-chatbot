@@ -18,7 +18,7 @@ export async function POST(req: Request) {
     'content': '你現在扮演生物學專家'
   }, ...histories.slice(-3, -1), {
     'role': 'user',
-    'content': `用戶輸入：${question}`請用最專業且客氣的口吻來呈現
+    'content': `用戶輸入：${question}請用最專業且客氣的口吻來呈現`
   }]
 
   const res = await openai.createChatCompletion({
